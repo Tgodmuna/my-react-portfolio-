@@ -1,0 +1,32 @@
+:local(.footer_main) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+:local(.footer) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 0;
+}
+
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #0d0202;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+

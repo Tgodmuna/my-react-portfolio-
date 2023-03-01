@@ -1,0 +1,208 @@
+.form_holder {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.form_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    -o-transition: border-color 0.3s ease-in-out;
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    -ms-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4caf50;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper label {
+    position: absolute;
+    top: -35px;
+    /* increase this value */
+    left: 10px;
+    color: #888;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.input-wrapper input:focus+label,
+.input-wrapper input:not(:placeholder-shown)+label {
+    top: -25px;
+    font-size: 12px;
+    color: #601e1e;
+}
+
+.input-wrapper input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        font-size: 16px;
+        -o-transition: all 4.0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        -webkit-transition: all .3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        -moz-transition: all .3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        -ms-transition: all .3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        transition: all .3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.input-wrapper input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #888;
+}
+.input-wrapper input:focus,
+.input-wrapper input:not(:placeholder-shown) {
+    background-color: #747070;
+    /* add a background color */
+    border: 2px solid #333;
+    /* add a border */
+}
+
+
+.message label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social li:last-child {
+    margin-right: 0;
+}
+
+.social a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social a:hover {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Animation styles */
+.form_holder {
+    animation: form-holder 0.5s ease-in-out;
+}
+
+@keyframes form-holder {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.btn {
+    -webkit-animation: btn 0.3s ease-in-out;
+    animation: btn 0.3s ease-in-out;
+}
+
+@keyframes btn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.social li {
+    animation: social 0.3s ease-in-out;
+    animation-delay: 0.2s;
+}
+
+@keyframes social {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
