@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Center_section.module.css";
+import styles from './Center_section.module.css';
 import { AppConsumer } from "./AppContext";
 
 const RightSection = (props) => {
