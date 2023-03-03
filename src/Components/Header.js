@@ -7,6 +7,10 @@ import Myservices from "./Myservices";
 import Projects from "./Projects";
 
 const Header = (props) => {
+    props.showContactMe && <ContactMe />
+      props.show_aboutMe && <Aboutme />
+      props.show_services && <Myservices />
+      props.show_projects && <Projects />
   return (
     <>
       <div className={styles.Container}>
@@ -32,10 +36,7 @@ const Header = (props) => {
           </ul>
         </div>
       </div>
-      {props.showContactMe && <ContactMe />}
-      {props.show_aboutMe && <Aboutme />}
-      {props.show_services && <Myservices />}
-      {props.show_projects && <Projects />}
+    
     </>
   );
 };
