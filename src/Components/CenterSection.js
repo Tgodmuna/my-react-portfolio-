@@ -33,7 +33,6 @@ const RightSection = (props) => {
                       elegant user experiences. My focus is on usability and
                       accessibility, and I take pride in creating websites that
                       are easy to navigate and visually appealing.
-                      <p></p>
                     </p>
                   </div>
                   <h3>Skills</h3>

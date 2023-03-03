@@ -37,27 +37,48 @@ class Homepage extends Component {
       show_aboutMe: false,
       show_services: false,
       show_projects: false,
+      show_active: false,
     };
   }
 
   handleContactMe = () => {
-    return this.setState({ showContactMe: true }, () => console.log("clicked"));
+    return this.setState({
+      showContactMe: true,
+      show_aboutMe: false,
+      show_services: false,
+      show_projects: false,
+    });
   };
   handle_aboutMe = () => {
-    return this.setState({ show_aboutMe: true });
+    return this.setState({
+      show_aboutMe: true,
+      showContactMe: false,
+      show_services: false,
+      show_projects: false,
+    });
   };
   handle_services = () => {
     return this.setState({
       show_services: true,
+      showContactMe: false,
+      show_aboutMe: false,
+      show_projects: false,
     });
   };
   handle_projects = () => {
     return this.setState({
+      showContactMe: false,
+      show_aboutMe: false,
+      show_services: false,
       show_projects: true,
     });
   };
 
   render() {
+    console.log("about is ", this.state.show_aboutMe);
+    console.log("project is ", this.state.show_projects);
+    console.log("contactme is", this.state.show_projects);
+    console.log("myservice is", this.state.show_services);
     let content;
     if (this.state.showContactMe) {
       content = (
@@ -114,7 +135,12 @@ class Homepage extends Component {
           handle_aboutMe_click={this.handle_aboutMe}
           handle_services_click={this.handle_services}
           handle_projects_click={this.handle_projects}
+          showContactMe={this.state.showContactMe}
+          show_aboutMe={this.state.show_aboutMe}
+          show_services={this.state.show_services}
+          show_projects={this.state.show_projects}
         />
+
         {content}
       </AppProvider>
     );
