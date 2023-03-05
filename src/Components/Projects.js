@@ -8,21 +8,23 @@ class Projects extends Component {
       projects: [
         {
           id: 1,
-          name: "Project One",
-          description: "This is the first project",
+          name: "weather app",
+          description:
+            "this project is all about  weather app built only using React.js",
           image: "https://via.placeholder.com/150",
-          link: "https://www.example.com/project-one",
+          link: "https://tgweather-app.netlify.app",
         },
         {
           id: 2,
-          name: "Project Two",
-          description: "This is the second project",
+          name: "My portFolio",
+          description:
+            "my developer's portfolio, built using React.Js styled with CSS",
           image: "https://via.placeholder.com/150",
-          link: "https://www.example.com/project-two",
+          link: "",
         },
         {
           id: 3,
-          name: "Project Three",
+          name: "temperature calculator",
           description: "This is the third project",
           image: "https://via.placeholder.com/150",
           link: "https://www.example.com/project-three",
