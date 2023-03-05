@@ -19,7 +19,7 @@ const RightSection = (props) => {
                     />
                   </div>
                   <div className={styles.intro}>
-                    <span className={styles.webX}>front-end Web Developer</span>{" "}
+                    <span className={styles.webX}>{context.job }</span>{" "}
                     <br />
                   </div>
                 </div>

@@ -31,7 +31,7 @@ const ContactMe = () => {
             <form onSubmit={handleFormSubmit} netlify method='post'>
               <div className={styles["input-wrapper"]}>
                 <input
-                  type='hidden' // added a hidden value for netlify to process form data
+                  type={'text'}
                   id='fullname'
                   placeholder='Full Name'
                   className={styles.FN}
@@ -45,7 +45,7 @@ const ContactMe = () => {
 
               <div className={styles["input-wrapper"]}>
                 <input
-                  type='hidden' // added a hidden value for netlify to process form data
+                  type='email'
                   id='email'
                   name='email'
                   required
@@ -59,7 +59,6 @@ const ContactMe = () => {
 
               <div className={styles["input-wrapper"]}>
                 <textarea
-                  type='hidden' // added a hidden value for netlify to process form data
                   id='message'
                   name='message'
                   cols='30'

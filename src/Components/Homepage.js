@@ -129,6 +129,7 @@ class Homepage extends Component {
           school: this.state.academic,
           phoneNumber: this.state.phoneNumber,
           profilePic: this.state.Image,
+          job: this.state.Job
         }}>
         <Header
           handleContactMeClick={this.handleContactMe}
