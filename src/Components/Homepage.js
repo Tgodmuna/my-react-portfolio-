@@ -17,7 +17,7 @@ class Homepage extends Component {
       Surn_Name: "Agu",
       location: "Enugu,Nigeria",
       Job: "front-end Developer( reactJs)",
-      Image: `./TG.jpeg`,
+      Image: `./pic1.jpg`,
       academic: {
         University: "Enugu state university of science and technology",
         Degree: "BSc in Computer science",
