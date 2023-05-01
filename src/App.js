@@ -10,7 +10,7 @@ import UpdatedAboutme from "./Components/UpdatedAboutme";
 export const UserData = React.createContext();
 
 function App() {
-  const [state, setstate] = useState({
+  const [state] = useState({
     Bio: {
       Fname: " ThankGod ",
       Sname: "Munachimso",

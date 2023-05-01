@@ -23,8 +23,9 @@ const portfolioDescriptions = (
   </>
 );
 const weatherDescription = (
-  <>      <h4>weather app built using :</h4>
-
+  <>
+    {" "}
+    <h4>weather app built using :</h4>
     <ul>
       <li>reactjs</li>
       <li>openWeatherMapAPI</li>
@@ -35,7 +36,7 @@ const weatherDescription = (
 );
 
 const UpdatedProjects = () => {
-  const [state, setstate] = useState({
+  const [state] = useState({
     projects: [
       {
         id: 1,
